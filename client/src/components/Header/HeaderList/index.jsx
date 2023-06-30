@@ -1,11 +1,15 @@
-import React from 'react';
+import React from "react";
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
 export default function HeadrList(props) {
+  const history = useHistory();
   const items = props.obj.items;
-  console.log(items);
 
   const handleClickListLink = (index) => {
-    window.location.href = items[index].link;
+    if (items[index].link === "/pricing") history.push(items[index].link);
+    else {
+      window.location.href = items[index].link;
+    }
   };
 
   const arr = items.map((item, index) => (

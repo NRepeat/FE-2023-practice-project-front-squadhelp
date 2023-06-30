@@ -17,7 +17,7 @@ const jsonData = {
       label: "Contest",
       items: [
         { label: "How it works", link: "https://www.example.com/how-it-works" },
-        { label: "Pricing", link: "https://www.example.com/pricing" },
+        { label: "Pricing", link: "/pricing" },
         { label: "Agency service", link: "https://www.example.com/agency-service" },
         { label: "Active contests", link: "https://www.example.com/active-contests" },
         { label: "Winners", link: "https://www.example.com/winners" },

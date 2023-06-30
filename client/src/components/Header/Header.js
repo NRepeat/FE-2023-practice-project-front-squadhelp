@@ -17,7 +17,6 @@ class Header extends React.Component {
   componentDidMount() {
     if (!this.props.data) {
       this.props.getUser();
-      console.log(jsonData.navigationLists[0].items,"aaaa" )
     }
   }
 
